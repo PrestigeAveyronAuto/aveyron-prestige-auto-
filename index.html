@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Bienvenue</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aveyron Prestige Auto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #1a1a1a, #000000);
+      background-image: url('https://images.unsplash.com/photo-1603398938378-2f99f5f7f1b3?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(0.4);
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #e60000;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .car-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .car-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+    }
+    footer {
+      border-top: 1px solid #555;
+      padding-top: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Site Aveyron Prestige Auto</h1>
-  <p>Site en construction...</p>
+  <div class="overlay">
+    <header>
+      <h1>Aveyron Prestige Auto</h1>
+      <p>Achat & vente de véhicules d’exception</p>
+    </header>
+
+    <section id="vehicules">
+      <h2>🚗 Véhicules disponibles</h2>
+      <div class="car-list">
+        <div class="car-item">
+          <strong>BMW Série 3 2019</strong><br>
+          Prix : 18 900 €<br>
+          120 000 km - Diesel - Garantie 6 mois
+        </div>
+        <div class="car-item">
+          <strong>Peugeot 3008 2020</strong><br>
+          Prix : 21 500 €<br>
+          95 000 km - Essence - 1ère main
+        </div>
+        <!-- Tu peux ajouter d'autres ici -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📞 Contact</h2>
+      <p>📍 123 Route de Rodez, 12000 Aveyron</p>
+      <p>📱 06 12 34 56 78</p>
+      <p>📧 contact@aveyron-prestige-auto.fr</p>
+    </section>
+
+    <footer>
+      &copy; 2025 Aveyron Prestige Auto. Tous droits réservés.
+    </footer>
+  </div>
 </body>
 </html>
